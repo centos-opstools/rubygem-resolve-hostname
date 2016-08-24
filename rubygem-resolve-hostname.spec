@@ -3,7 +3,7 @@
 
 Name: rubygem-%{gem_name}
 Version: 0.0.4
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Hostname resolver with caching
 Group: Development/Languages
 License: MIT
@@ -14,6 +14,7 @@ BuildRequires: rubygems-devel
 BuildRequires: ruby
 # BuildRequires: rubygem(rspec)
 BuildArch: noarch
+Provides: rubygem(%{gem_name}) = %{version}
 
 %description
 With caching, selector for IPv4/IPv6, and many other features.
@@ -75,5 +76,8 @@ popd
 %{gem_instdir}/spec
 
 %changelog
+* Wed Aug 24 2016 Rich Megginson <rmeggins@redhat.com> - 0.0.4-2
+- added Provides for rubygem(resolve-hostname)
+
 * Wed Aug 17 2016 Yanis Guenane <yguenane@redhat.com> - 0.0.4-1
 - Initial package
