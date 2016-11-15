@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-6cf1702e4356a63a26222b485fd996b05b8d1315	centos-opstools/rubygem-resolve-hostname-ptl
+# UUID          Group Name
+False 	Non-Interactive Users
+3c895b8d4e47e4ae49b094b5137908f5cb160068       	centos-opstools/rubygem-resolve-hostname-core
+6cf1702e4356a63a26222b485fd996b05b8d1315        	centos-opstools/rubygem-resolve-hostname-ptl
+global:Registered-Users		Registered Users
