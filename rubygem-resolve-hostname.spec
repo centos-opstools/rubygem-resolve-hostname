@@ -2,8 +2,8 @@
 %global gem_name resolve-hostname
 
 Name: rubygem-%{gem_name}
-Version: 0.0.4
-Release: 2%{?dist}
+Version: 0.1.0
+Release: 1%{?dist}
 Summary: Hostname resolver with caching
 Group: Development/Languages
 License: MIT
@@ -62,6 +62,7 @@ popd
 %dir %{gem_instdir}
 %exclude %{gem_instdir}/.gitignore
 %{gem_instdir}/.rspec
+%exclude %{gem_instdir}/.travis.yml
 %license %{gem_instdir}/LICENSE.txt
 %{gem_libdir}
 %exclude %{gem_cache}
@@ -76,6 +77,9 @@ popd
 %{gem_instdir}/spec
 
 %changelog
+* Thu Jun 29 2017 Rich Megginson <rmeggins@redhat.com> - 0.1.0-1
+- version 0.1.0
+
 * Wed Aug 24 2016 Rich Megginson <rmeggins@redhat.com> - 0.0.4-2
 - added Provides for rubygem(resolve-hostname)
 
