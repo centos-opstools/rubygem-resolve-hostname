@@ -50,8 +50,6 @@ cp -a .%{gem_dir}/* \
         %{buildroot}%{gem_dir}/
 
 
-
-
 # Run the test suite
 %check
 pushd .%{gem_instdir}
